@@ -11,13 +11,17 @@
 
     <div class="search-container">
       <input type="text" placeholder="🔍 Rechercher un livre..." />
+
       <div class="filters">
-        <button>Trier par date</button>
-        <button>Trier par ordre alphabetique</button>
-        <label for="range"
-          >Nombre de livres à afficher par defaut :
-          <span id="range-value">12</span></label
-        >
+        <button id="sort-date">Trier par date décroissant</button>
+        <button id="sort-date-inverse">Trier par date croissant</button>
+        <button id="sort-alpha">Trier par ordre alphabétique</button>
+
+        <label for="range">
+          Nombre de livres à afficher par défaut :
+          <span id="range-value">12</span>
+        </label>
+
         <input type="range" id="range" min="1" max="500" value="12" />
       </div>
     </div>
